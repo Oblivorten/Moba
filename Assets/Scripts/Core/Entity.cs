@@ -2,15 +2,15 @@ using UnityEngine;
 
 public abstract class Entity : MonoBehaviour
 {
-    [SerializeField] private Team team;
-    [SerializeField] private int maxHealth = 100;
+    [SerializeField] private Team _team;
+    [SerializeField] private int _maxHealth = 100;
 
     public int CurrentHealth { get; protected set; }
-    public Team Team => team;
+    public Team Team => _team;
 
     protected virtual void Awake()
     {
-        CurrentHealth = maxHealth;
+        CurrentHealth = _maxHealth;
     }
 
     public virtual void TakeDamage(int damage)
