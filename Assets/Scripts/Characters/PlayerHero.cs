@@ -7,13 +7,13 @@ public class PlayerHero : Character
     [SerializeField] private float _raycastDistance = 100f;
 
     private Camera _mainCamera;
-    private AbilityComponent _abilityComponent;
+    private AbilitySystem _abilitySystem;
 
     protected override void Awake()
     {
         base.Awake();
         _mainCamera = Camera.main;
-        _abilityComponent = GetComponent<AbilityComponent>();
+        _abilitySystem = GetComponent<AbilitySystem>();
     }
 
     private void Update()
@@ -29,13 +29,13 @@ public class PlayerHero : Character
             ProcessRightClick();
         }
         if (Input.GetKeyDown(KeyCode.Q)) {
-            _abilityComponent?.UseQ();
+            _abilitySystem?.UseQ();
         }
         if (Input.GetKeyDown(KeyCode.W)) {
-            _abilityComponent?.UseW();
+            _abilitySystem?.UseW();
         }
         if (Input.GetKeyDown(KeyCode.E)) {
-            _abilityComponent?.UseE();
+            _abilitySystem?.UseE();
         }
     }
 
@@ -58,7 +58,7 @@ public class PlayerHero : Character
         if (Physics.Raycast(ray, out var groundHit, _raycastDistance, _groundLayer))
         {
             Target.ClearTarget();
-            Movement.SetDestination(groundHit.point);
+            Movement.MoveTo(groundHit.point);
         }
     }
 
@@ -77,7 +77,7 @@ public class PlayerHero : Character
         }
         else
         {
-            Movement.SetDestination(targetGo.transform.position);
+            Movement.MoveTo(targetGo.transform.position);
         }
     }
 }
