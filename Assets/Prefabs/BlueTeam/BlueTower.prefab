@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 3001528883472194903}
   - component: {fileID: 1924270159187769586}
   - component: {fileID: 3450643923456639763}
+  - component: {fileID: -4639168290390736777}
+  - component: {fileID: 2498743394231064959}
+  - component: {fileID: 3046811432216143438}
   m_Layer: 7
   m_Name: BlueTower
   m_TagString: Tower
@@ -110,3 +113,47 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &-4639168290390736777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5972127707932025255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cbc7b073e4044f46bfa38c5080b5da3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 10
+  _range: 2
+  _cooldown: 1
+--- !u!114 &2498743394231064959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5972127707932025255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23c0e92bb4596e44989998adb1ce09b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+--- !u!114 &3046811432216143438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5972127707932025255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e1d309206985274d8deb3f6fbea97e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _team: 0
+  _enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0

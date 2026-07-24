@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1193272467781013954}
   - component: {fileID: 688638830150277147}
   - component: {fileID: 8905648813839921048}
+  - component: {fileID: -1475725844355390400}
+  - component: {fileID: -5912445600350802456}
   m_Layer: 7
   m_Name: BlueBase
   m_TagString: Base
@@ -110,3 +112,32 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &-1475725844355390400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2957725577343720276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23c0e92bb4596e44989998adb1ce09b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+--- !u!114 &-5912445600350802456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2957725577343720276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84266b7d8f21f3e408ad648de9e586e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _team: 0
+  _healRadius: 8
+  _healAmount: 10
+  _healInterval: 1

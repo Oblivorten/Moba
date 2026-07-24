@@ -41,6 +41,15 @@ public class Base : Building
 
     protected override void OnDestroyed()
     {
+        if (Team == Team.Blue)
+        {
+            GameManager.Instance.Defeat();
+        }
+        else
+        {
+            GameManager.Instance.Victory();
+        }
+
         base.OnDestroyed();
     }
 
