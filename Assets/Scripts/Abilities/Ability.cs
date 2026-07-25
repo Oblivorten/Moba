@@ -8,8 +8,8 @@ public abstract class Ability : MonoBehaviour
 
     public string AbilityName => _abilityName;
     public float Cooldown => _cooldown;
-
     public bool IsReady => Time.time >= _lastUseTime + _cooldown;
+    public float CooldownRemaining => Mathf.Max(0f, _lastUseTime + _cooldown - Time.time);
 
     public bool TryUse()
     {

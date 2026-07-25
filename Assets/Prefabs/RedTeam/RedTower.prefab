@@ -71,8 +71,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cbc7b073e4044f46bfa38c5080b5da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 10
-  _range: 2
+  _damage: 100
+  _range: 40
   _cooldown: 1
 --- !u!114 &-3426381470110638403
 MonoBehaviour:

@@ -13,41 +13,33 @@ public class MovementComponent : MonoBehaviour
 
     public void MoveTo(Vector3 destination)
     {
-        if (!_agent.isOnNavMesh) {
-            return;
-        }
-
+        if (!_agent.isOnNavMesh) return;
         _agent.isStopped = false;
         _agent.SetDestination(destination);
     }
 
+    public void Warp(Vector3 destination)
+    {
+        if (!_agent.isOnNavMesh) return;
+
+        if (NavMesh.SamplePosition(destination, out NavMeshHit hit, 2f, NavMesh.AllAreas))
+        {
+            _agent.Warp(hit.position);
+        }
+    }
+
     public void Stop()
     {
-        if (!_agent.isOnNavMesh) {
-            return;
-        }
-
+        if (!_agent.isOnNavMesh) return;
         _agent.isStopped = true;
         _agent.ResetPath();
     }
 
     public bool HasReachedDestination()
     {
-        if (!_agent.isOnNavMesh)
-        {
-            return false;
-        }
-
-        if (_agent.pathPending)
-        {
-            return false;
-        }
-
-        if (!_agent.hasPath)
-        {
-            return false;
-        }
-
+        if (!_agent.isOnNavMesh) return false;
+        if (_agent.pathPending) return false;
+        if (!_agent.hasPath) return false;
         return _agent.remainingDistance <= _agent.stoppingDistance;
     }
 }

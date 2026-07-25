@@ -17,6 +17,9 @@ GameObject:
   - component: {fileID: 4547618390656040910}
   - component: {fileID: 7451611119313567395}
   - component: {fileID: 1047184117268332895}
+  - component: {fileID: 7144899718318884057}
+  - component: {fileID: -6036552892025058648}
+  - component: {fileID: -2296676193772467420}
   m_Layer: 7
   m_Name: PlayerHero
   m_TagString: Player
@@ -169,9 +172,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e09e87d7db6a624a97c561da653e6cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _abilityQ: {fileID: 0}
-  _abilityW: {fileID: 0}
-  _abilityE: {fileID: 0}
+  _abilityQ: {fileID: -6036552892025058648}
+  _abilityW: {fileID: -2296676193772467420}
+  _abilityE: {fileID: 7144899718318884057}
+--- !u!114 &7144899718318884057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120156366185928787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a100726483c8674eb5ebe0cbbc8f84e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cooldown: 1
+  _abilityName: Dash
+  _dashDistance: 5
+  _groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &-6036552892025058648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120156366185928787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27fdd5716ff7b3142bcab5da7bdd57ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cooldown: 10
+  _abilityName: Fireball
+  _damage: 30
+  _radius: 3
+  _enemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
+--- !u!114 &-2296676193772467420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120156366185928787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34698546df7a20c4cb2394bbc7dd7e34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cooldown: 15
+  _abilityName: Heal
+  _healAmount: 40
 --- !u!1001 &5022565726458014724
 PrefabInstance:
   m_ObjectHideFlags: 0

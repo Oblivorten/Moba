@@ -127,6 +127,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 234381904}
     m_Modifications:
+    - target: {fileID: -7219097547113044718, guid: bd60c69e8b3ee0144a6739bef7b6cdba, type: 3}
+      propertyPath: _maxHealth
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: -6310818054946637130, guid: bd60c69e8b3ee0144a6739bef7b6cdba, type: 3}
+      propertyPath: _damage
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2120156366185928787, guid: bd60c69e8b3ee0144a6739bef7b6cdba, type: 3}
       propertyPath: m_Name
       value: PlayerHero
@@ -336,6 +344,10 @@ PrefabInstance:
     - target: {fileID: 2163344051270568839, guid: d2afd9bdb7d581640a4b957ea038d8ee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2955071310361177479, guid: d2afd9bdb7d581640a4b957ea038d8ee, type: 3}
+      propertyPath: _maxHealth
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 2957725577343720276, guid: d2afd9bdb7d581640a4b957ea038d8ee, type: 3}
       propertyPath: m_Name
@@ -812,6 +824,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 234381904}
     m_Modifications:
+    - target: {fileID: -5329356187192545567, guid: f06442ef89e775140b49bae500766fe9, type: 3}
+      propertyPath: _damage
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 5365328933673555370, guid: f06442ef89e775140b49bae500766fe9, type: 3}
       propertyPath: m_Name
       value: EnemyHero
@@ -1144,6 +1160,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2498743394231064959, guid: f181fbda49beca64ea3b4c7f1502e6fc, type: 3}
+      propertyPath: _maxHealth
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 5972127707932025255, guid: f181fbda49beca64ea3b4c7f1502e6fc, type: 3}
       propertyPath: m_Name
       value: BlueTower
@@ -1268,6 +1288,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 271725589}
     m_Modifications:
+    - target: {fileID: -1475725844355390400, guid: 2e322980feb1d274ba50efec629df0d1, type: 3}
+      propertyPath: _maxHealth
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 2163344051270568839, guid: 2e322980feb1d274ba50efec629df0d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1335,6 +1359,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1512531978}
     m_Modifications:
+    - target: {fileID: -3426381470110638403, guid: a1d1d8bbf043c0842957550cef828d42, type: 3}
+      propertyPath: _maxHealth
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 486339947201702764, guid: a1d1d8bbf043c0842957550cef828d42, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.04
