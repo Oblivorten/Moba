@@ -13,6 +13,7 @@ public class EnemyHeroAI : MonoBehaviour
 
     private void Update()
     {
+
         if (_hero.Target.HasValidTarget)
         {
             AttackTarget();
@@ -31,6 +32,7 @@ public class EnemyHeroAI : MonoBehaviour
     private void AttackTarget()
     {
         Entity target = _hero.Target.CurrentTarget;
+
 
         if (_hero.Attack.TryAttack(target.gameObject))
         {

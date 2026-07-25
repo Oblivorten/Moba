@@ -18,5 +18,12 @@ public abstract class Character : Entity
         Movement = GetComponent<MovementComponent>();
         Attack = GetComponent<AttackComponent>();
         Target = GetComponent<TargetComponent>();
+
+        Health.OnDeath += HandleDeath;
+    }
+
+    protected virtual void HandleDeath()
+    {
+        Destroy(gameObject);
     }
 }

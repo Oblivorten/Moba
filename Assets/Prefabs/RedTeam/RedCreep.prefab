@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 10
-  _range: 2
+  _range: 10
   _cooldown: 1
 --- !u!114 &7279739264912363004
 MonoBehaviour:
@@ -203,4 +203,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _team: 1
-  _targetPoint: {fileID: 0}
+  _targetPoint: {fileID: 2163344051270568839, guid: 2e322980feb1d274ba50efec629df0d1, type: 3}
