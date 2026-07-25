@@ -94,13 +94,6 @@ public class EnemyHeroAI : MonoBehaviour
 
     private void MoveAlongLane()
     {
-        if (_targetPoint == null)
-        {
-            Debug.LogWarning("[EnemyHeroAI] _targetPoint is NULL!");
-            return;
-        }
-
-        Debug.Log($"[EnemyHeroAI] Moving to lane point: {_targetPoint.position}");
         _hero.Movement.MoveTo(_targetPoint.position);
     }
 

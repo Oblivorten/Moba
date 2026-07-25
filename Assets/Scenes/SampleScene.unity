@@ -573,7 +573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 143960406}
-  _offset: {x: 0, y: 60, z: -10}
+  _offset: {x: 0, y: 20, z: -10}
   _followSpeed: 5
 --- !u!1 &410087039
 GameObject:
@@ -1110,7 +1110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 486339947201702764, guid: f181fbda49beca64ea3b4c7f1502e6fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11
+      value: -17.28
       objectReference: {fileID: 0}
     - target: {fileID: 486339947201702764, guid: f181fbda49beca64ea3b4c7f1502e6fc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1341,7 +1341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 486339947201702764, guid: a1d1d8bbf043c0842957550cef828d42, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11
+      value: -17.28
       objectReference: {fileID: 0}
     - target: {fileID: 486339947201702764, guid: a1d1d8bbf043c0842957550cef828d42, type: 3}
       propertyPath: m_LocalPosition.z

@@ -24,6 +24,7 @@ public abstract class Character : Entity
 
     protected virtual void HandleDeath()
     {
-        Destroy(gameObject);
+        GetComponentInChildren<CharacterAnimator>()?.PlayDeath();
+        Destroy(gameObject, 1.5f);
     }
 }

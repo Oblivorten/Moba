@@ -27,14 +27,16 @@ public class AttackComponent : MonoBehaviour
 
     public bool TryAttack(GameObject target)
     {
-        if (!CanAttack(target)) {
+        if (!CanAttack(target))
+        {
             return false;
         }
 
         if (target.TryGetComponent<HealthComponent>(out var health))
         {
             health.TakeDamage(_damage);
-            _lastAttackTime = Time.time; 
+            GetComponentInChildren<CharacterAnimator>()?.PlayAttack();
+            _lastAttackTime = Time.time;
             return true;
         }
 
