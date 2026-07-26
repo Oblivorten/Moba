@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class PlayerHero : Character
 {
+    public static PlayerHero Instance { get; private set; }
+
     [SerializeField] private LayerMask _groundLayer;
     [SerializeField] private LayerMask _targetLayer;
     [SerializeField] private float _raycastDistance = 100f;
@@ -12,6 +14,7 @@ public class PlayerHero : Character
     protected override void Awake()
     {
         base.Awake();
+        Instance = this;
         _mainCamera = Camera.main;
         _abilitySystem = GetComponent<AbilitySystem>();
     }
@@ -78,6 +81,14 @@ public class PlayerHero : Character
         else
         {
             Movement.MoveTo(targetGo.transform.position);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this)
+        {
+            Instance = null;
         }
     }
 }
