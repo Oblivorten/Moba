@@ -5,6 +5,8 @@ using UnityEngine.AI;
 public class MovementComponent : MonoBehaviour
 {
     private NavMeshAgent _agent;
+    private Vector3 _lastDestination;
+    private bool _hasDestination;
 
     private void Awake()
     {
@@ -14,6 +16,15 @@ public class MovementComponent : MonoBehaviour
     public void MoveTo(Vector3 destination)
     {
         if (!_agent.isOnNavMesh) return;
+
+        if (_hasDestination && Vector3.Distance(_lastDestination, destination) < 0.3f)
+        {
+            return;
+        }
+
+        _lastDestination = destination;
+        _hasDestination = true;
+
         _agent.isStopped = false;
         _agent.SetDestination(destination);
     }
@@ -33,6 +44,7 @@ public class MovementComponent : MonoBehaviour
         if (!_agent.isOnNavMesh) return;
         _agent.isStopped = true;
         _agent.ResetPath();
+        _hasDestination = false;
     }
 
     public bool HasReachedDestination()
