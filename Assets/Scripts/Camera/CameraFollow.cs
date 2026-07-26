@@ -2,15 +2,20 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    [SerializeField] private Transform _target;
     [SerializeField] private Vector3 _offset = new Vector3(0, 15, -10);
     [SerializeField] private float _followSpeed = 5f;
+
+    private Transform _target;
 
     private void LateUpdate()
     {
         if (_target == null)
         {
-            return;
+            if (PlayerHero.Instance == null)
+            {
+                return;
+            }
+            _target = PlayerHero.Instance.transform;
         }
 
         Vector3 desiredPosition = _target.position + _offset;
@@ -20,5 +25,4 @@ public class CameraFollow : MonoBehaviour
             desiredPosition,
             _followSpeed * Time.deltaTime);
     }
-
 }
