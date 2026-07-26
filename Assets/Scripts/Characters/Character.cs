@@ -24,6 +24,8 @@ public abstract class Character : Entity
 
     protected virtual void HandleDeath()
     {
+        Team killerTeam = Team == Team.Blue ? Team.Red : Team.Blue;
+        GameManager.Instance.AddKill(killerTeam);
         GetComponentInChildren<CharacterAnimator>()?.PlayDeath();
         Destroy(gameObject, 1.5f);
     }

@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -5,8 +6,7 @@ public class PlayerHUD : MonoBehaviour
 {
     [SerializeField] private PlayerHero _player;
     [SerializeField] private Image _healthFill;
-    [SerializeField] private Text _healthText;
-
+    [SerializeField] private TMP_Text _healthText;
     [SerializeField] private Image _qCooldownFill;
     [SerializeField] private Image _wCooldownFill;
     [SerializeField] private Image _eCooldownFill;
