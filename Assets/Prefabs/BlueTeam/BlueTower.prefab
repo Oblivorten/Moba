@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23c0e92bb4596e44989998adb1ce09b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 1000
+  _maxHealth: 200
 --- !u!114 &3046811432216143438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,6 +181,10 @@ PrefabInstance:
     - target: {fileID: 4144408493378538968, guid: 0ecd5b5c78a300d438ada09106418850, type: 3}
       propertyPath: m_SizeDelta.y
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516942511177995570, guid: 0ecd5b5c78a300d438ada09106418850, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8155761496472459475, guid: 0ecd5b5c78a300d438ada09106418850, type: 3}
       propertyPath: m_Pivot.x

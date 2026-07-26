@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _team: 1
-  _targetPoint: {fileID: 2163344051270568839, guid: 2e322980feb1d274ba50efec629df0d1, type: 3}
+  _targetPoint: {fileID: 1852676853577023077, guid: 24e34b022a20a2a49a5a9ef0f5c58e68, type: 3}
   _detectionRadius: 8
   _enemyLayer:
     serializedVersion: 2

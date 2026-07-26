@@ -36,8 +36,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 6704509029344047694}
   - {fileID: 7819789325150946250}
-  - {fileID: 1186769968812058606}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &6658951493693441109
@@ -155,7 +155,7 @@ MonoBehaviour:
   _enemyLayer:
     serializedVersion: 2
     m_Bits: 128
---- !u!1001 &7014168544928104253
+--- !u!1001 &3180709766024391325
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -166,10 +166,6 @@ PrefabInstance:
     - target: {fileID: 463708726463496203, guid: 0ecd5b5c78a300d438ada09106418850, type: 3}
       propertyPath: m_Name
       value: HealthBarCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 4144408493378538968, guid: 0ecd5b5c78a300d438ada09106418850, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6210894882324142476, guid: 0ecd5b5c78a300d438ada09106418850, type: 3}
       propertyPath: _offset.y
@@ -264,10 +260,10 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ecd5b5c78a300d438ada09106418850, type: 3}
---- !u!224 &1186769968812058606 stripped
+--- !u!224 &6704509029344047694 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8155761496472459475, guid: 0ecd5b5c78a300d438ada09106418850, type: 3}
-  m_PrefabInstance: {fileID: 7014168544928104253}
+  m_PrefabInstance: {fileID: 3180709766024391325}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7714597479500407841
 PrefabInstance:

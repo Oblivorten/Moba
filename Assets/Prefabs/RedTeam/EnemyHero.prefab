@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23c0e92bb4596e44989998adb1ce09b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 400
 --- !u!195 &-8597397633285247253
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -123,9 +123,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cbc7b073e4044f46bfa38c5080b5da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 5000
-  _range: 5000
-  _cooldown: 0
+  _damage: 20
+  _range: 5
+  _cooldown: 2
 --- !u!114 &-2954301595968182302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,9 +163,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d57d799497c2e5488026dad1e4bae97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetPoint: {fileID: 2163344051270568839, guid: 2e322980feb1d274ba50efec629df0d1, type: 3}
-  _detectionRadius: 5000
-  _leashRadius: 7
+  _targetPoint: {fileID: 1852676853577023077, guid: 24e34b022a20a2a49a5a9ef0f5c58e68, type: 3}
+  _detectionRadius: 9
+  _leashRadius: 8
   _enemyLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -257,6 +257,14 @@ PrefabInstance:
     - target: {fileID: 463708726463496203, guid: 0ecd5b5c78a300d438ada09106418850, type: 3}
       propertyPath: m_Name
       value: HealthBarCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6210894882324142476, guid: 0ecd5b5c78a300d438ada09106418850, type: 3}
+      propertyPath: _offset.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6516942511177995570, guid: 0ecd5b5c78a300d438ada09106418850, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8155761496472459475, guid: 0ecd5b5c78a300d438ada09106418850, type: 3}
       propertyPath: m_Pivot.x
