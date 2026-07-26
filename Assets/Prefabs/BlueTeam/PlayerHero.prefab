@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23c0e92bb4596e44989998adb1ce09b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 400
 --- !u!114 &-63793310823762136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,9 +126,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cbc7b073e4044f46bfa38c5080b5da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 10
-  _range: 10
-  _cooldown: 1
+  _damage: 25
+  _range: 5
+  _cooldown: 2
 --- !u!114 &4547618390656040910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27fdd5716ff7b3142bcab5da7bdd57ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cooldown: 10
+  _cooldown: 1
   _abilityName: Fireball
   _damage: 30
   _radius: 3

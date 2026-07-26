@@ -107,7 +107,8 @@ public class EnemyHeroAI : MonoBehaviour
         }
         else
         {
-            _hero.Movement.MoveTo(target.transform.position);
+            Vector3 chasePos = _hero.Attack.GetChasePosition(transform.position, target.transform.position);
+            _hero.Movement.MoveTo(chasePos);
         }
     }
 }

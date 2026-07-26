@@ -42,4 +42,16 @@ public class AttackComponent : MonoBehaviour
 
         return false;
     }
+
+    public Vector3 GetChasePosition(Vector3 attackerPosition, Vector3 targetPosition)
+    {
+        Vector3 direction = (attackerPosition - targetPosition).normalized;
+
+        if (direction == Vector3.zero)
+        {
+            direction = Vector3.forward;
+        }
+
+        return targetPosition + direction * (_range * 0.9f);
+    }
 }

@@ -67,7 +67,8 @@ public class PlayerHero : Character
 
     private void HandleAutoAttack()
     {
-        if (!Target.HasValidTarget) {
+        if (!Target.HasValidTarget)
+        {
             return;
         }
 
@@ -80,7 +81,8 @@ public class PlayerHero : Character
         }
         else
         {
-            Movement.MoveTo(targetGo.transform.position);
+            Vector3 chasePos = Attack.GetChasePosition(transform.position, targetGo.transform.position);
+            Movement.MoveTo(chasePos);
         }
     }
 

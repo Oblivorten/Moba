@@ -88,7 +88,8 @@ public class Creep : Character
         }
         else
         {
-            Movement.MoveTo(target.transform.position);
+            Vector3 chasePos = Attack.GetChasePosition(transform.position, target.transform.position);
+            Movement.MoveTo(chasePos);
         }
     }
 }

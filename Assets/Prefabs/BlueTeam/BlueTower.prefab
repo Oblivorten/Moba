@@ -72,9 +72,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cbc7b073e4044f46bfa38c5080b5da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 100
-  _range: 40
-  _cooldown: 1
+  _damage: 5
+  _range: 7
+  _cooldown: 2
 --- !u!114 &2498743394231064959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23c0e92bb4596e44989998adb1ce09b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 1000
 --- !u!114 &3046811432216143438
 MonoBehaviour:
   m_ObjectHideFlags: 0

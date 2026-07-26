@@ -122,9 +122,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cbc7b073e4044f46bfa38c5080b5da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 10
-  _range: 10
-  _cooldown: 1
+  _damage: 5
+  _range: 5
+  _cooldown: 2
 --- !u!114 &7279739264912363004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _team: 1
   _targetPoint: {fileID: 2163344051270568839, guid: 2e322980feb1d274ba50efec629df0d1, type: 3}
-  _detectionRadius: 4
+  _detectionRadius: 8
   _enemyLayer:
     serializedVersion: 2
     m_Bits: 128
